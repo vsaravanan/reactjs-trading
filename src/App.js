@@ -14,9 +14,9 @@ import { updateStockId } from 'reducers/actions/state-actions';
 
 import './styles/reduction.css';
 
-const getBasename = () => {
-  return `/${process.env.PUBLIC_URL.split('/').pop()}`;
-};
+// const getBasename = () => {
+//   return `/${process.env.PUBLIC_URL.split('/').pop()}`;
+// };
 
 class App extends React.Component {
 
@@ -80,7 +80,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter basename={getBasename()}>
+      <BrowserRouter basename='/'>
           <main className="cr-app bg-light">
             <Sidebar />
             <Content fluid onClick={this.handleContentClick}>
