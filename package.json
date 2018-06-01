@@ -1,5 +1,5 @@
 {
-  "name": "react-reduction",
+  "name": "reactjs-redux-trading",
   "version": "1.0.0",
   "private": false,
   "homepage": "https://reduction-admin.github.io/react-reduction",
@@ -47,8 +47,10 @@
     "stylelint-scss": "^2.1.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "build-css":
+      "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css":
+      "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
@@ -56,5 +58,8 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "keywords": [],
+  "description":
+    "search bar, fetch company details, display as cards using react-strap, fetch 1 month stock history using react-tablee"
 }
