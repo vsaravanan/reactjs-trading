@@ -127,14 +127,14 @@ class CompanyData extends Component {
         console.log(store.getState());
         //this.forceUpdate();
       }
-    );     
+    );  
   }
 
   componentWillUpdate(nextProps) {
 
     if (nextProps.stockId !== this.props.stockId) {
-      this.fetch();
-    }
+        this.fetch();
+    } 
   }
 
   componentWillMount() {

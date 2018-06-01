@@ -91,7 +91,7 @@ class App extends React.Component {
                 <Route path="/dropdowns" component={DropdownPage} />     
                 <Route path="/stock/:stockId/chart/:duration" render={(props) => <GotoCompanyChart  {...props} />} />     
                      
-                <Redirect to="/" />
+                <Redirect to="/cards" />
               </Switch>
               <Footer />
             </Content>

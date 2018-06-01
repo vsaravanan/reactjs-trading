@@ -145,9 +145,6 @@ class CompanyChart extends Component {
  
   }
 
-  componentWillMount() {
-    this.fetch();
-  }
 
   componentDidMount() {
     this.unsubscribe = store.subscribe(() =>
@@ -155,6 +152,7 @@ class CompanyChart extends Component {
         console.log(store.getState());
       }
     );     
+    this.fetch();
   }
 
   componentWillUpdate(nextProps) {
