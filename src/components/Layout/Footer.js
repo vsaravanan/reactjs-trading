@@ -9,7 +9,8 @@ const Footer = () => {
     <Navbar>
       <Nav navbar>
         <NavItem>
-          2018 Reduction theme, source on <SourceLink>Github</SourceLink>
+          Try ORCL or MSFT or any other stock code in search box source on{" "}
+          <SourceLink>Github</SourceLink>
         </NavItem>
       </Nav>
     </Navbar>
